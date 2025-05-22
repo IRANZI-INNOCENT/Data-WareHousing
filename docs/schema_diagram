@@ -1,0 +1,30 @@
+// Star Schema Diagram
+digraph {
+	fact_sales [label="fact_sales
+sale_id
+date_id
+product_id
+store_id
+quantity_sold
+revenue" fillcolor=lightyellow shape=box style=filled]
+	dim_date [label="dim_date
+date_id
+full_date
+day
+month
+quarter
+year" fillcolor=lightblue shape=box style=filled]
+	dim_product [label="dim_product
+product_id
+name
+category
+brand" fillcolor=lightblue shape=box style=filled]
+	dim_store [label="dim_store
+store_id
+store_name
+city
+region" fillcolor=lightblue shape=box style=filled]
+	fact_sales -> dim_date [label=date_id]
+	fact_sales -> dim_product [label=product_id]
+	fact_sales -> dim_store [label=store_id]
+}

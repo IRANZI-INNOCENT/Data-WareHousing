@@ -1,0 +1,23 @@
+// Workflow Diagram
+digraph {
+	csv_date [label="dim_date.csv" fillcolor=lightgreen shape=box style=filled]
+	csv_product [label="dim_product.csv" fillcolor=lightgreen shape=box style=filled]
+	csv_store [label="dim_store.csv" fillcolor=lightgreen shape=box style=filled]
+	csv_sales [label="fact_sales.csv" fillcolor=lightgreen shape=box style=filled]
+	etl [label="ETL Pipeline (etl.py)
+Extract: Read CSVs
+Transform: Clean data
+Load: Insert into MySQL" fillcolor=lightcoral shape=box style=filled]
+	mysql [label="MySQL (retail_dw)
+dim_date
+dim_product
+dim_store
+fact_sales" fillcolor=lightblue shape=box style=filled]
+	output [label="Loaded Tables" fillcolor=lightyellow shape=box style=filled]
+	csv_date -> etl
+	csv_product -> etl
+	csv_store -> etl
+	csv_sales -> etl
+	etl -> mysql
+	mysql -> output
+}
