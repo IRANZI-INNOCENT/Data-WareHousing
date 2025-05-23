@@ -150,3 +150,12 @@ retail-data-warehouse/
 ## Conclusion
 
 This project demonstrates how to build a functional data warehouse using a star schema in MySQL. By loading retail data via `LOAD DATA LOCAL INFILE` and analyzing it with SQL queries, it supports real-world business decisions. The reflection connects the technical design to practical use cases in retail management.
+
+
+## Group 7 Members
+
+Innocent Iranzi
+Faith Mwangi         669954
+Vivian Kipsang       670386
+Hans Onesmo          671463
+Rosamistica Ng'ang'a 670699 
