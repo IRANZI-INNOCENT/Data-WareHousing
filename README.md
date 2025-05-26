@@ -154,7 +154,7 @@ This project demonstrates how to build a functional data warehouse using a star 
 
 ## Group 7 Members
 
-Innocent Iranzi
+Innocent Iranzi  670513
 
 Faith Mwangi         669954
 
